@@ -2,3 +2,7 @@
 body {
     background-color: #570357;
 }
+
+img {
+    border-radius: 75px;
+}
