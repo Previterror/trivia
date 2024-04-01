@@ -1,23 +1,18 @@
-import { ExamplesController } from "./controllers/ExamplesController.js";
-import { HomeController } from "./controllers/HomeController.js";
+import { TriviaController } from "./controllers/TriviaController.js";
 import { Router } from "./utils/Router.js";
 
 
 export const router = new Router([
   {
     path: '',
-    controllers: [HomeController, ExamplesController],
+    controllers: [TriviaController],
     view: /*html*/`
-    <div class="bg-white p-3">
+    <div class="bg-primary text-dark p-3">
       <div class="card-body">
-        <p>Home Page</p>
-        <button class="btn btn-dark" onclick="app.HomeController.testButton()">😎</button>
+        <h3>Trivial Escape</h3>
+        
       </div>
     </div>
     `
   },
-  {
-    path: '#/about',
-    view: 'app/views/AboutView.html'
-  }
 ])
